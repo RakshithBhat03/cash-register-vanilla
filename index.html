@@ -8,6 +8,76 @@
     <title>Cash Register</title>
   </head>
   <body>
+    <h1>Cash Register 💰</h1>
+    <h2>
+      Enter the bill amount and cash given and I'll let you know the minimum
+      number of notes to be returned.
+    </h2>
+    <div class="container">
+      <label for="">Bill amount 💲</label>
+      <input
+        type="number"
+        placeholder="$"
+        id="input-bill"
+        class="enter-amount"
+      />
+      <button id="btn-next">Next</button>
+      <label for="" style="display: none" id="cash-label">Cash amount 💲</label>
+      <input
+        type="number"
+        placeholder="$"
+        style="display: none"
+        id="input-cash"
+        class="enter-amount"
+      />
+      <button id="btn-check" style="display: none">Check</button>
+      <div id="notes-table"></div>
+    </div>
+    <footer>
+      <div class="socials">My Socials</div>
+      <ul class="list">
+        <li>
+          <a
+            href="https://github.com/RakshithBhat03"
+            rel="noreferrer noopener"
+            target="_blank"
+            class="link"
+          >
+            Github
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/RakshithBhat1"
+            rel="noreferrer noopener"
+            target="_blank"
+            class="link"
+          >
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/rakshithbhat/"
+            rel="noreferrer noopener"
+            target="_blank"
+            class="link"
+          >
+            Linkedin
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://rakshithbhat.netlify.app/"
+            rel="noreferrer noopener"
+            target="_blank"
+            class="link"
+          >
+            Portfolio
+          </a>
+        </li>
+      </ul>
+    </footer>
     <script src="/app.js"></script>
   </body>
 </html>

@@ -1,3 +1,142 @@
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #dbeafe;
+}
 body {
+  margin: 5.5rem auto;
+  background-color: var(--secondary-color);
+  min-height: 100%;
   text-align: center;
+  /* position: relative; */
+}
+label{
+    margin: 0.5rem auto;
+    color:var(--primary-color);
+    font-size: 1.5rem;
+    
+}
+h1{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+h2{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    
+}
+caption{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80vh;
+  margin: auto;
+  /* border: 2px solid black; */
+}
+.enter-amount {
+  margin: 1rem auto;
+  min-height: 30px;
+  font-size: medium;
+  border: 2px var(--primary-color) solid;
+  padding: 0 0.5rem;
+  border-radius: 0.3rem;
+}
+.notes-table {
+  border: 2px var(--primary-color) solid;
+  margin: 1rem auto;
+  width: 60vh;
+}
+.message{
+font-size: 1.5rem;
+color: var(--primary-color);
+}
+tr {
+  height: 50px;
+  /* width: auto; */
+}
+caption {
+    margin: 1rem;
+    color: var(--primary-color);
+    font-weight: "700";
+    font-size: "1.5rem;
+}
+th {
+  color: var(--primary-color);
+  width: 35%;
+  background-color: var(--secondary-color);
+  font-weight: 700;
+}
+td {
+  font-weight: 700;
+  /* padding: 1rem 1.5rem; */
+  background-color: var(--secondary-color);
+}
+/* Buttons */
+#btn-check {
+  margin: 1rem auto;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px var(--primary-color) solid;
+  background-color: transparent;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1rem;
+}
+#btn-check:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+#btn-next {
+  margin: 1rem auto;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px var(--primary-color) solid;
+  background-color: transparent;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1rem;
+}
+#btn-next:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+/* Footer and Socials */
+.socials {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+.list {
+  list-style: none;
+  text-align: center;
+  margin: 2.5rem auto;
+  margin-left: -40px;
+}
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+footer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  margin: 0 auto;
+  bottom: 0;
+  margin-top: 15rem;
+}
+
+.list li {
+  display: inline;
+  margin: 0rem 0.5rem;
 }
