@@ -11,6 +11,8 @@ btnNext.addEventListener("click", () => {
     btnCheck.style.display = "block";
     inputCash.style.display = "block";
     cashLabel.style.display = "block";
+  } else {
+    notesTable.innerHTML = `<p class="message">Bill amount should be positive value!!</p>`;
   }
 });
 btnCheck.addEventListener("click", () => {
