@@ -5,7 +5,7 @@ const btnNext = document.querySelector("#btn-next");
 const btnCheck = document.querySelector("#btn-check");
 const notesTable = document.querySelector("#notes-table");
 
-btnNext.addEventListener("click", () => {
+function nextClickHandler() {
   if (Number(inputBill.value) > 0) {
     btnNext.style.display = "none";
     btnCheck.style.display = "block";
@@ -14,8 +14,9 @@ btnNext.addEventListener("click", () => {
   } else {
     notesTable.innerHTML = `<p class="message">Bill amount should be positive value!!</p>`;
   }
-});
-btnCheck.addEventListener("click", () => {
+}
+
+function checkNotesHandler() {
   if (inputCash.value !== "" && inputBill.value !== "")
     if (Number(inputCash.value) === Number(inputBill.value))
       notesTable.innerHTML = `<p class="message">You're all squared!!</p>`;
@@ -65,4 +66,7 @@ btnCheck.addEventListener("click", () => {
         Number(inputCash.value) - Number(inputBill.value)
       )}</p>`;
     }
-});
+}
+
+btnNext.addEventListener("click", nextClickHandler);
+btnCheck.addEventListener("click", checkNotesHandler);
