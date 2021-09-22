@@ -11,6 +11,7 @@ function nextClickHandler() {
     btnCheck.style.display = "block";
     inputCash.style.display = "block";
     cashLabel.style.display = "block";
+    notesTable.innerHTML = "";
   } else {
     notesTable.innerHTML = `<p class="message">Bill amount should be positive value!!</p>`;
   }
